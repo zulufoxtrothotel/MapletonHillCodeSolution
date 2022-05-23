@@ -19,8 +19,11 @@ const styles = {
       height: 8px;
       border-radius: 50px;
       width: ${DEFAULT_VALUES.sliderLength}px;
-      background-color: #292d32;
+      background: linear-gradient(0deg, #262626 0%, #141414 100%);
       position: relative;
+      border-bottom: solid 2px #4f4f51;
+      border-left: solid 2px #1f1f21;
+      border-right: solid 2px #1f1f21;
     `,
     status: (location: number) => css`
       height: 8px;
