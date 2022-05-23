@@ -1,25 +1,23 @@
+/** @jsxImportSource @emotion/react */ //include this in all jsx files
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { css } from '@emotion/react'
+import Player from "./Player";
 
-function App() {
+const styles ={
+  app: css`
+    background-color: #282828;
+    min-width: 100vh;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  `,
+}
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <div css={styles.app}>
+            <Player />
+          </div>
   );
 }
 
